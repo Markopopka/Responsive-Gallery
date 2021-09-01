@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Galerija</title>
+
+    <style>
+       body{
+
+    font-family: sans-serif;
+    margin: auto;
+
+       }
+
+       #gridbox{
+
+        display: grid;
+        grid-template-rows: 10vw 50fr 20vw;
+        
+       }
+
+       #header{
+          
+           text-align: center;
+           
+           font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1600 - 320)));
+
+           background-color: cadetblue;
+           color: white;
+          
+           
+       }
+        #galerija{
+            
+            
+            max-width: 960px;
+            width: 90%;
+            margin: 0 auto;
+ 
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 8px;
+            padding: 16px;
+            
+        }
+            
+           
+            
+        @media screen and (max-width: 1024px) {
+                #galerija {
+                grid-template-columns: repeat(5, 1fr);
+                }
+            }
+ 
+        @media screen and (max-width: 768px) {
+                #galerija {
+                grid-template-columns: repeat(3, 1fr);
+                }
+            }
+ 
+        @media screen and (max-width: 414px) {
+                #galerija {
+                grid-template-columns: repeat(1, 1fr);
+                 }
+
+            }
+       
+
+        img{
+            width: 90%;
+            height: auto;
+            background-color: cadetblue;
+            
+            }
+
+       
+        figcaption{
+
+            display: inline-block;
+            }
+
+        footer{
+
+            width: auto;
+            padding: 16px;
+            text-indent: 8px;
+            
+            
+            }
+        
+    </style>
+</head>
+<body>
+    <div id="gridbox">
+        <header id="header">Gallery Heading</header>
+
+        <article id="galerija">
+            <picture>
+                <img src="placeholder-image.png" alt="">
+                <figcaption>Image Title</figcaption>
+            </picture>
+
+            <picture>
+                <img src="placeholder-image.png" alt="">
+                <figcaption>Image Title</figcaption>
+            </picture>
+
+            <picture>
+                <img src="placeholder-image.png" alt="">
+                <figcaption>Image Title</figcaption>
+            </picture>
+
+            <picture>
+                <img src="placeholder-image.png" alt="">
+                <figcaption>Image Title</figcaption>
+            </picture>
+
+            <picture>
+                <img src="placeholder-image.png" alt="">
+                <figcaption>Image Title</figcaption>
+            </picture>
+
+            <picture>
+                <img src="placeholder-image.png" alt="">
+                <figcaption>Image Title</figcaption>
+            </picture>
+
+            <picture>
+                <img src="placeholder-image.png" alt="">
+                <figcaption>Image Title</figcaption>
+            </picture>
+
+            <picture>
+                <img src="placeholder-image.png" alt="">
+                <figcaption>Image Title</figcaption>
+            </picture>
+
+            <picture>
+                <img src="placeholder-image.png" alt="">
+                <figcaption>Image Title</figcaption>
+            </picture>
+
+            <picture>
+                <img src="placeholder-image.png" alt="">
+                <figcaption>Image Title</figcaption>
+            </picture>
+            
+            
+        </article>
+
+        <footer id="footer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Exercitationem commodi a doloribus dolorem provident aliquid.
+                  Dicta praesentium iusto,
+                 quas tenetur eius laudantium? Optio, at deleniti odit illo
+                  possimus amet magnam!</p>
+        </footer>
+    </div>
+</body>
+</html>
